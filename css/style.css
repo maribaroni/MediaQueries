@@ -1,0 +1,393 @@
+.wrapper{
+	margin: auto;
+	padding: auto;
+	width: 90%;
+	background-color: white;
+	font-family: Serif;
+	line-height: normal;
+	display: grid;
+
+}
+
+h5,h6{
+	line-height: .1em;
+}
+h3{
+	line-height: 1em;
+}
+
+p{
+	margin:2px;
+}
+
+ul{
+		list-style-type: square;
+		margin: 0;
+		padding: 0px;
+}
+
+ol{
+		margin: 0;
+		padding: 0;
+}
+
+.header{
+	font-weight: bold;
+	text-align: center;
+	background-color: gray;
+	color: white;
+	text-align: center;
+	border-style: solid;
+	border-color: black;
+	border-width: 1.5px;
+	padding: 3px;
+	grid-area: head;
+}
+
+.navbar{
+	padding: 10px;
+	border-style: solid;
+	border-color: black;
+	border-width: 1.5px;
+	background-color: gray;
+	color: black;
+	font-weight: bold;
+	grid-area: nav;
+}
+
+.menu a{
+	text-decoration: none;
+	font-style: bold;
+	color: white;
+	font-family: Arial;
+	margin: 10px;
+}
+
+.videoc{
+	border-style: solid;
+	border-color: black;
+	border-width: 1.5px;
+	grid-area: videocc;
+}
+
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px; 
+	height: 100; 
+	overflow: hidden;
+	align-self: center;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.ssingredients{
+	margin: 0;
+	padding: 3px;
+	border-style: solid;
+	border-color: black;
+	border-width: 1.5px;
+	grid-area: ingredient;
+}
+
+.ingredients{
+	margin: 0;
+	padding: 3px;
+	padding-right: 15px;
+	background-color: gray;
+	color: white;
+	border-style: solid;
+	border-color: black;
+	border-width: 1.5px;
+	-webkit-column-count: 1; 
+	-moz-column-count: 1 ;
+	column-count: 1;
+    text-align: justify;
+	line-height: 1.5em;
+}
+
+.lists {
+  padding-left:20px;
+}
+
+#notes{
+	margin: 0;
+	padding: 3px;
+    text-align: right;
+	font-size: 0.9em;
+/*	-webkit-column-count: 3; 
+	-moz-column-count: 3 ;
+	column-count: 3;*/
+}
+
+.ssdirection{
+	margin: 0;
+	padding: 5px;
+	border-style: solid;
+	border-color: black;
+	border-width: 1.5px;
+	grid-area: directions;
+}
+
+.direction{
+	margin: 0px;
+	padding: 10px;
+	padding-right: 15px;
+	border-style: solid;
+	border-color: black;
+	border-width: 1.5px;
+    text-align: left;
+	line-height: 1.7em;
+	text-align: justify;
+	background-color: gray;
+	color: white;
+	grid-area: directione;
+}
+
+.ssnutfact{
+	margin: 0;
+	padding: 3px;
+	border-style: solid;
+	border-color: black;
+	border-width: 1.5px;
+	grid-area: nuts;
+}
+
+.nutfact{
+	padding: 3px;
+	text-align: center;
+	background-color: gray;
+	color: white;
+	border-style: solid;
+	border-color: black;
+	border-width: 1.5px;
+}
+
+.contacts{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	text-align: center;
+	background-color: gray;
+	color: white;
+	border-style: solid;
+	border-color: black;
+	border-width: 1.5px;
+	grid-area: foot;
+}
+
+.footer{
+	font-weight: bold;
+	text-align: right;
+	background-color: gray;
+	color: white;
+	padding: 3px;
+}
+
+@media(min-width: 320px){
+	h1 {
+		font-size: 117px;
+	}
+	h2 {
+		font-size: 88px;
+	}
+	h3 {
+		font-size: 66px;
+	}
+	h4 {
+		font-size: 49px;
+	}
+	h5 {
+		font-size: 37px;
+	}
+	h6 {
+		font-size: 28px;
+	}
+	p {
+		font-size: 21px;
+	}
+	.wrapper{
+	grid-template-areas: "head"
+						"nav"
+						"ingredient" 
+						"directions"
+						"nuts"
+						"foot";
+	grid-gap: 15px;
+	}
+	.videoc{
+		align-self:start;
+	}
+	.header{margin:50px;}
+}
+	
+@media(min-width:640px){
+	h1{
+		font-size: 101px;
+	}
+	h2{
+		font-size: 75px;
+	}
+	h3{
+		font-size: 56px;
+	}
+	h4{
+		font-size: 42px;
+	}
+	h5{
+		font-size: 32px;
+	}
+	h6{
+		font-size: 24px;
+	}
+	p{
+		font-size: 18px;
+	}
+	.header{
+		background-color: darkolivegreen;
+	}
+	.navbar{
+		background-color: darkolivegreen;
+	}
+	.ingredients{
+		background-color: darkolivegreen;
+	}
+	.direction{
+		background-color: darkolivegreen;
+	}	
+	.nutfact{
+		background-color: darkolivegreen;
+	}	
+	.footer{
+		background-color: darkolivegreen;
+	}
+	.wrapper{
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: "head head"
+						"nav nav"
+						"ingredient ingredient"
+						"directions directions"
+						"nuts nuts"
+						"foot foot";
+	grid-gap: 15px;
+	}
+	.ingredients{
+		-webkit-column-count: 2; 
+		-moz-column-count: 2;
+		column-count: 2;
+	}
+	.ssdirection{
+		background-color: darkseagreen;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: "directione videocc";
+		grid-gap: 5px;
+	}
+	.videoc{
+		margin: auto;
+		padding: auto;
+		width: 100%;
+		align-self: center;
+		margin-top: 35%;
+	}
+	.ssingredients{
+		background-color: darkseagreen;
+	}
+	.ssnutfact{
+		background-color: darkseagreen;
+	}
+}
+
+@media(min-width:1048px){
+	h1{
+		font-size: 89px;
+	}
+	h2{
+		font-size: 67px;
+	}
+	h3{
+		font-size: 50px;
+	}
+	h4{
+		font-size: 37px;
+	}
+	h5{
+		font-size: 28px;
+	}
+	h6{
+		font-size: 21px;
+	}
+	p{
+		font-size: 16px;
+	}
+	.header{
+		background-color: indigo;
+	}
+	.navbar{
+		background-color: indigo;
+	}
+	.ingredients{
+		background-color: indigo;
+	}
+	.direction{
+		background-color: indigo;
+	}	
+	.nutfact{
+		background-color: indigo;
+	}	
+	.footer{
+		background-color: indigo;
+	}
+	.wrapper{
+	grid-template-columns: 3fr 7fr;
+
+	grid-template-areas: "head head head head"
+						"nav nav nav nav"
+						"ingredient directions directions directions"
+						"nuts nuts nuts nuts"
+						"foot foot foot foot";
+	grid-gap: 15px;
+	
+	}
+	.ingredients{
+		-webkit-column-count: 1; 
+		-moz-column-count: 1;
+		column-count: 1;
+		line-height: 2em;
+	}
+	.direction{
+		-webkit-column-count: 2; 
+		-moz-column-count: 2;
+		column-count: 2;
+	}
+	.ssdirection{
+		background-color: thistle;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: "directione videocc";
+		grid-gap: 5px;
+	}
+	.videoc{
+		margin: auto;
+		padding: auto;
+		width: 100%;
+		align-self: center;
+		justify-items: center;
+		margin-top: 18%;
+	}
+	.ssingredients{
+		background-color: thistle;
+	}
+	.ssnutfact{
+		background-color: thistle;
+	}
+
+}
